@@ -1,17 +1,28 @@
 "use client";
 import React, { useState } from "react";
-import { X, Menu } from "lucide-react"; // gunakan lucide-react untuk icon
+import { X, Menu } from "lucide-react";
 
 const navItems = [
-  { name: "Home", href: "#home" },
-  { name: "About", href: "#about" },
-  { name: "Project", href: "#project" },
-  { name: "Contact", href: "#contact" },
+  { name: "Home", href: "home" },
+  { name: "About", href: "about" },
+  { name: "Project", href: "project" },
+  { name: "Contact", href: "contact" },
 ];
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [active, setActive] = useState<string>("");
+
+  // Fungsi untuk scroll ke section tanpa mengubah URL
+  const handleScroll = (id: string) => (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    setActive(id);
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+    setIsOpen(false);
+  };
 
   return (
     <>
@@ -20,8 +31,8 @@ const Navbar: React.FC = () => {
         {navItems.map((item) => (
           <a
             key={item.href}
-            href={item.href}
-            onClick={() => setActive(item.href)}
+            href={`#${item.href}`}
+            onClick={handleScroll(item.href)}
             className={`px-4 py-2 font-montserrat font-semibold rounded-lg transition hover:bg-[#3375CC]/25 ${
               active === item.href ? "text-black" : "text-black"
             }`}
@@ -51,11 +62,8 @@ const Navbar: React.FC = () => {
               {navItems.map((item) => (
                 <a
                   key={item.href}
-                  href={item.href}
-                  onClick={() => {
-                    setIsOpen(false);
-                    setActive(item.href);
-                  }}
+                  href={`#${item.href}`}
+                  onClick={handleScroll(item.href)}
                   className={`w-full py-2 text-center font-montserrat font-semibold rounded-lg transition ${
                     active === item.href ? "text-black" : "text-black"
                   } hover:bg-[#3375CC]/25`}
