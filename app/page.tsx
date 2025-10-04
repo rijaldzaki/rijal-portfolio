@@ -100,7 +100,7 @@ const Home: NextPage = () => {
     },
     {
       id: 2,
-      title: "IoT-Based Fertilization Automation System",
+      title: "IoT-Based Irrigation Automation System",
       images: ["/assets/fertili.png", "/assets/fertili2.png"],
       description: `This project was developed as part of UGM’s community service program, aiming to support sustainable agriculture in Pejawaran, Banjarnegara. The IoT-based irrigation automation system utilized an ESP32 module and an RTC with an offline Wi-Fi interface, enabling time-based control through an ESP32 access point website without relying on a full internet connection. Additionally, the system was integrated with solar power to ensure energy sustainability in rural areas.\n\n
       The implementation of this project not only improved the efficiency of water and energy use but also introduced environmentally friendly technology to local farming groups. Through socialization and training, farmers gained an understanding of the system’s operation and were able to perform maintenance and make adjustments independently. Thus, this project serves as a practical example of appropriate technology that empowers local communities while promoting environmental sustainability.`,
@@ -116,7 +116,7 @@ const Home: NextPage = () => {
       id: 4,
       title: "Automatic Baking System",
       images: ["/assets/baking.png", "/assets/baking2.png", "/assets/baking3.png", "/assets/baking4.png"],
-      description: `This project focuses on the design of an Automatic Baking System aimed at improving the consistency and efficiency of small-scale Bolen pastry production through process automation. Traditional manual baking methods often result in inconsistent product quality due to imprecise temperature control and human error. The proposed system provides a solution by integrating automatic temperature and time control with a programmable controller-based conveyor system, ensuring that each batch of Bolen is baked evenly achieves a consistent level of doneness.\n\n
+      description: `This project focuses on the design of an Automatic Baking System aimed at improving the consistency and efficiency of small-scale Bolen pastry production through process automation. Traditional manual baking methods often result in inconsistent product quality due to imprecise temperature control and human error. The proposed system provides a solution by integrating automatic temperature and time control with a programmable logic controller-based conveyor system, ensuring that each batch of Bolen is baked evenly achieves a consistent level of doneness.\n\n
       The system is designed with a SoftPLC-based control architecture connected to sensors and actuators via an Ethernet TCP/IP network. A photoelectric sensor is used to detect the presence of products, while thermocouple and humidity sensors monitor oven conditions in real-time. Sensor data are processed by the SoftPLC to control the AC induction motor for the conveyor and the linear actuator for the roller gate, ensuring precise synchronization between product movement and baking temperature. Communication between the control unit and the Human Machine Interface (HMI) is established using the OPC-UA protocol, enabling real-time monitoring and system adjustments. The HMI interface is designed to be user-friendly, featuring start/stop buttons, temperature and time displays, and a visual representation of the baking process.`,
     },
     {
