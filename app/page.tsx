@@ -268,12 +268,6 @@ const Home: NextPage = () => {
       >
         <div
           className="absolute inset-0 w-full h-full pointer-events-none z-0"
-          style={{
-            backgroundImage: "url('/assets/noise.png')",
-            opacity: 0.8,
-            backgroundRepeat: "repeat",
-            backgroundSize: "auto",
-          }}
         />
         <div className="relative z-10 w-full flex flex-col items-center">
           <h2 className="sm:text-3xl text-2xl font-raleway font-bold mb-4 text-[#050e1a]">
