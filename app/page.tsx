@@ -248,7 +248,7 @@ const Home: NextPage = () => {
           particularly for monitoring and automation.
         </p>
         <a
-          href="/assets/CV.pdf"
+          href="/assets/CV-Rijal Dzaki Fadhlurrohman.pdf"
           download
           className="inline-flex items-center gap-2 bg-[#3375CC] hover:bg-[#83B9FF] text-white px-6 py-3 rounded-lg shadow-lg transition-all duration-300 font-raleway font-semibold"
         >
