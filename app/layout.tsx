@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import { Montserrat } from 'next/font/google'
-import { Marcellus_SC } from 'next/font/google'
+import { Montserrat, Raleway } from 'next/font/google' 
 import "./globals.css";
 
 const geistSans = localFont({
@@ -20,15 +19,19 @@ const montserrat = Montserrat({
   weight: ['400','600', '700'],
   variable: '--font-montserrat',
 });
-const marcellus = Marcellus_SC({
+
+const raleway = Raleway({
   subsets: ['latin'],
-  weight: ['400'],
-  variable: '--font-marcellus',
+  weight: ['400', '600', '700'],
+  variable: '--font-raleway',
 });
 
 export const metadata: Metadata = {
-  title: "Rijal Dzaki - Portofolio",
-  description: "Portofolio",
+  title: "Rijal Dzaki's Portfolio",
+  description: "Portfolio",
+  icons: {
+    icon: "/icon.png",
+  },
 };
 
 export default function RootLayout({
@@ -43,8 +46,7 @@ export default function RootLayout({
           ${geistSans.variable}
           ${geistMono.variable}
           ${montserrat.variable}
-          ${marcellus.variable}
-          antialiased
+          ${raleway.variable}   
         `}
       >
         {children}

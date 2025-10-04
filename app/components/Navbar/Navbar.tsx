@@ -12,8 +12,6 @@ const navItems = [
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [active, setActive] = useState<string>("");
-
-  // Fungsi untuk scroll ke section tanpa mengubah URL
   const handleScroll = (id: string) => (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
     setActive(id);
@@ -50,9 +48,9 @@ const Navbar: React.FC = () => {
           aria-label="Toggle Menu"
         >
           {isOpen ? (
-            <X size={28} className="transition-all duration-300 text-black" />
+            <X size={25} className="transition-all duration-300 text-black" />
           ) : (
-            <Menu size={28} className="transition-all duration-300 text-black" />
+            <Menu size={25} className="transition-all duration-300 text-black" />
           )}
         </button>
 
@@ -64,7 +62,7 @@ const Navbar: React.FC = () => {
                   key={item.href}
                   href={`#${item.href}`}
                   onClick={handleScroll(item.href)}
-                  className={`w-full py-2 text-center font-montserrat font-semibold rounded-lg transition ${
+                  className={`w-full py-2 text-center text-sm md:text-base font-montserrat font-semibold rounded-lg transition ${
                     active === item.href ? "text-black" : "text-black"
                   } hover:bg-[#3375CC]/25`}
                 >
