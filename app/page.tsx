@@ -242,11 +242,10 @@ const Home: NextPage = () => {
         </h2>
         <div className="h-1 w-32 mb-6 rounded bg-gradient-to-r from-[#3375CC] via-[#83B9FF] to-[#3375CC]" />
         <p className="mb-6 font-montserrat text-white text-sm sm:text-base text-center max-w-md sm:max-w-4xl mx-auto tracking-wide">
-          I am a Physics Engineering graduate with a strong interest in
-          technology development in the fields of instrumentation, automation,
-          and the Internet of Things (IoT). I am actively involved in research
-          projects focusing on the development of IoT-based systems,
-          particularly for monitoring and automation.
+          I am an Engineering Physics graduate with a strong interest in technology 
+          development in the fields of instrumentation and control, automation, and 
+          the Internet of Things (IoT). I am actively involved in research projects 
+          focusing on the development of embedded systems and IoT-based systems.
         </p>
         <a
           href="/assets/CV-Rijal Dzaki Fadhlurrohman.pdf"
