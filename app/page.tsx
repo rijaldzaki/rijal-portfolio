@@ -7,6 +7,7 @@ import { FaGithub, FaLinkedin, FaEnvelope, FaPlay, FaPause } from "react-icons/f
 import { AiFillInstagram } from "react-icons/ai";
 import { X, ArrowRight, Download, ChevronLeft, ChevronRight } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
+import { Analytics } from '@vercel/analytics/next';
 
 // Load component
 const Loader = () => {
@@ -506,6 +507,7 @@ const Home: NextPage = () => {
       <audio id="bg-music" loop>
         <source src="/assets/music.mp3" type="audio/mpeg" />
       </audio>
+      <Analytics />
     </div>
   );
 };
