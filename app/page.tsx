@@ -491,10 +491,10 @@ const Home: NextPage = () => {
       <div className="fixed bottom-6 left-6 z-30">
         <button
           onClick={toggleMusic}
-          className="group flex items-center bg-[#3375CC] text-white rounded-full shadow-lg hover:bg-[#235ba3] transition-all duration-500 overflow-hidden w-10 h-10 sm:w-14 sm:h-14 hover:w-auto pr-4 sm:pr-6"
+          className="group flex items-center bg-[#3375CC] text-white rounded-full shadow-lg hover:bg-[#235ba3] transition-all duration-500 overflow-hidden w-11 h-11 sm:w-14 sm:h-14 hover:w-auto pr-4 sm:pr-6"
         >
           <span className="flex items-center justify-center min-w-[2.5rem] sm:min-w-[3.5rem]">
-            {isPlaying ? <FaPause className="w-3 h-3 sm:w-4 sm:h-4" /> : <FaPlay className="w-3 h-3 sm:w-4 sm:h-4" />}
+            {isPlaying ? <FaPause className="w-3 h-3 sm:w-4 sm:h-4" /> : <FaPlay className="w-4 h-4 sm:w-4 sm:h-4" />}
           </span>
           <span
             className="font-montserrat font-semibold whitespace-nowrap opacity-0 translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-500 ease-out text-xs sm:text-sm"
