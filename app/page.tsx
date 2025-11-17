@@ -102,14 +102,14 @@ const Home: NextPage = () => {
     {
       id: 2,
       title: "IoT-Based Irrigation Automation System",
-      images: ["/assets/smartpark.png", "/assets/smartpark1.png", "/assets/smartpark2.png"],
+      images: ["/assets/fertili.png", "/assets/fertili2.png"],
       description: `This project was developed as part of UGM’s community service program, aiming to support sustainable agriculture in Pejawaran, Banjarnegara. The IoT-based irrigation automation system utilized an ESP32 module and an RTC with an offline Wi-Fi interface, enabling time-based control through an ESP32 access point website without relying on a full internet connection. Additionally, the system was integrated with solar power to ensure energy sustainability in rural areas.\n\n
       The implementation of this project not only improved the efficiency of water and energy use but also introduced environmentally friendly technology to local farming groups. Through socialization and training, farmers gained an understanding of the system’s operation and were able to perform maintenance and make adjustments independently. Thus, this project serves as a practical example of appropriate technology that empowers local communities while promoting environmental sustainability.`,
     },
     {
       id: 3,
       title: "Smart Park - Sleman Sembada",
-      images: ["/assets/fertili.png", "/assets/fertili2.png"],
+      images: ["/assets/smartpark.png", "/assets/smartpark1.png", "/assets/smartpark2.png"],
       description: `The Smart Park project focused on developing an IoT-based park management system to improve energy efficiency, environmental awareness, and public safety. The system integrates LDR, PIR, and SHT20 sensors to enable automatic lighting control, monitor temperature and humidity, and support an early warning mechanism for potential hazard detection within park environments.\n\n
       The development process included designing system workflows, block diagrams, and electronic schematics, followed by implementing the solution using Arduino Mega 2560, Raspberry Pi 3, MOSFET switching, and both MQTT and HTTP protocols. Through this integration, devices such as lamps, sprinklers, and buzzers were controlled automatically based on sensor readings. The Raspberry Pi handled data processing and communication, enabling seamless interaction between hardware components and cloud or local services.\n\n
       A key feature of the project was the development of a real-time monitoring dashboard. The dashboard displayed environmental data such as light intensity, temperature, humidity, and actuator status, allowing users to monitor park conditions remotely. By providing centralized and accessible visual insights, the dashboard enhanced system transparency and improved decision-making for park management, demonstrating the practical value of IoT-based environmental monitoring.`,
