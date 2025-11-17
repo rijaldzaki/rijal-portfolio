@@ -102,26 +102,34 @@ const Home: NextPage = () => {
     {
       id: 2,
       title: "IoT-Based Irrigation Automation System",
-      images: ["/assets/fertili.png", "/assets/fertili2.png"],
+      images: ["/assets/smartpark.png", "/assets/smartpark1.png", "/assets/smartpark2.png"],
       description: `This project was developed as part of UGM’s community service program, aiming to support sustainable agriculture in Pejawaran, Banjarnegara. The IoT-based irrigation automation system utilized an ESP32 module and an RTC with an offline Wi-Fi interface, enabling time-based control through an ESP32 access point website without relying on a full internet connection. Additionally, the system was integrated with solar power to ensure energy sustainability in rural areas.\n\n
       The implementation of this project not only improved the efficiency of water and energy use but also introduced environmentally friendly technology to local farming groups. Through socialization and training, farmers gained an understanding of the system’s operation and were able to perform maintenance and make adjustments independently. Thus, this project serves as a practical example of appropriate technology that empowers local communities while promoting environmental sustainability.`,
     },
     {
       id: 3,
+      title: "Smart Park - Sleman Sembada",
+      images: ["/assets/fertili.png", "/assets/fertili2.png"],
+      description: `The Smart Park project focused on developing an IoT-based park management system to improve energy efficiency, environmental awareness, and public safety. The system integrates LDR, PIR, and SHT20 sensors to enable automatic lighting control, monitor temperature and humidity, and support an early warning mechanism for potential hazard detection within park environments.\n\n
+      The development process included designing system workflows, block diagrams, and electronic schematics, followed by implementing the solution using Arduino Mega 2560, Raspberry Pi 3, MOSFET switching, and both MQTT and HTTP protocols. Through this integration, devices such as lamps, sprinklers, and buzzers were controlled automatically based on sensor readings. The Raspberry Pi handled data processing and communication, enabling seamless interaction between hardware components and cloud or local services.\n\n
+      A key feature of the project was the development of a real-time monitoring dashboard. The dashboard displayed environmental data such as light intensity, temperature, humidity, and actuator status, allowing users to monitor park conditions remotely. By providing centralized and accessible visual insights, the dashboard enhanced system transparency and improved decision-making for park management, demonstrating the practical value of IoT-based environmental monitoring.`,
+    },
+    {
+      id: 4,
       title: "LoStresRa : Prototype of a LoRa-Based Stress Diagnosis System",
       images: ["/assets/lostress.png", "/assets/lostress2.png", "/assets/lostress3.png", "/assets/lostress4.png"],
       description: `This project designed and developed a prototype of a stress detection system (LoStresRa) utilizing physiological sensors and LoRa communication modules. The system was created to monitor stress levels among students by measuring Galvanic Skin Response (GSR) and Skin Temperature (ST), which are then classified into three categories (low, medium, high) using LED indicators. The main hardware components include an Arduino Mega, GSR sensor, LM35 sensor, LEDs, LCD, and LoRa modules, programmed through the Arduino IDE.\n\n
       The testing results demonstrated that the system can successfully read body signals in real time, classify stress levels, and transmit the data via LoRa to be displayed on a serial monitor. The integration of LoRa technology enables long-range data transmission with low power consumption, making this system a promising, efficient, and sustainable solution for physiological monitoring and early stress detection.`
     },
     {
-      id: 4,
+      id: 5,
       title: "Automatic Baking System",
       images: ["/assets/baking.png", "/assets/baking2.png", "/assets/baking3.png", "/assets/baking4.png"],
       description: `This project focuses on the design of an Automatic Baking System aimed at improving the consistency and efficiency of small-scale Bolen pastry production through process automation. Traditional manual baking methods often result in inconsistent product quality due to imprecise temperature control and human error. The proposed system provides a solution by integrating automatic temperature and time control with a programmable logic controller-based conveyor system, ensuring that each batch of Bolen is baked evenly achieves a consistent level of doneness.\n\n
       The system is designed with a SoftPLC-based control architecture connected to sensors and actuators via an Ethernet TCP/IP network. A photoelectric sensor is used to detect the presence of products, while thermocouple and humidity sensors monitor oven conditions in real-time. Sensor data are processed by the SoftPLC to control the AC induction motor for the conveyor and the linear actuator for the roller gate, ensuring precise synchronization between product movement and baking temperature. Communication between the control unit and the Human Machine Interface (HMI) is established using the OPC-UA protocol, enabling real-time monitoring and system adjustments. The HMI interface is designed to be user-friendly, featuring start/stop buttons, temperature and time displays, and a visual representation of the baking process.`,
     },
     {
-      id: 5,
+      id: 6,
       title: "Prototype of an IoT-Based Indoor Air Quality (IAQ) Monitoring System",
       images: ["/assets/iaq.png", "/assets/iaq2.png", "/assets/iaq3.png"],
       description: `The Prototype of an IoT-Based Indoor Air Quality (IAQ) Monitoring System was developed to monitor indoor air conditions in real time using the NodeMCU ESP32. The system integrates an MQ-2 gas sensor to detect smoke, LPG, and CO, as well as a DHT-22 sensor to measure temperature and humidity. Data is processed by the ESP32 and transmitted via Wi-Fi to the Blynk Cloud, allowing users to view live readings and receive alerts when gas levels exceed safe thresholds. Testing results show that the system can accurately monitor air quality and display real-time data through the Blynk dashboard.`,
