@@ -255,14 +255,25 @@ const Home: NextPage = () => {
           the Internet of Things (IoT). I am actively involved in research projects 
           focusing on the development of embedded systems and IoT-based systems.
         </p>
-        <a
-          href="/assets/CV-Rijal Dzaki Fadhlurrohman.pdf"
-          download
-          className="inline-flex items-center gap-2 bg-[#3375CC] hover:bg-[#83B9FF] text-white px-6 py-3 rounded-lg shadow-lg transition-all duration-300 font-raleway font-semibold"
-        >
-          <Download size={20} />
-          Download CV
-        </a>
+        <div className="flex gap-4">
+          <a
+            href="/assets/CV-Rijal Dzaki Fadhlurrohman.pdf"
+            download
+            className="inline-flex items-center gap-2 bg-[#3375CC] hover:bg-[#83B9FF] text-white px-6 py-3 rounded-lg shadow-lg transition-all duration-300 font-raleway font-semibold"
+          >
+            <Download size={20} />
+            Download CV
+          </a>
+
+          <a
+            href="/assets/Portfolio-Rijal Dzaki Fadhlurrohman.pdf"
+            download
+            className="inline-flex items-center gap-2 bg-[#3375CC] hover:bg-[#83B9FF] text-white px-6 py-3 rounded-lg shadow-lg transition-all duration-300 font-raleway font-semibold"
+          >
+            <Download size={20} />
+            Download Portfolio
+          </a>
+        </div>
       </motion.section>
 
       {/* Project */}
